@@ -15,8 +15,8 @@ Part 1 of a three-project portfolio on children and young people's mental health
 | # | Project | Question |
 |---|---|---|
 | **1** | **Access & inequalities (this repo)** | Where, and for whom, is access to children's mental-health care unequal? |
-| 2 | [Demand forecasting & waiting-list simulation](https://github.com/Abheetsbabbar/children-mental-health-demand-forecasting) | How many referrals are coming, and what capacity would clear the waiting list? |
-| 3 | [Explainable self-harm risk model](https://github.com/Abheetsbabbar/youth-self-harm-explainable-ml) | Which local social factors explain youth self-harm admissions, and which areas exceed expectation? |
+| 2 | Demand forecasting & waiting-list simulation *(coming 17 Nov 2026)* | How many referrals are coming, and what capacity would clear the waiting list? |
+| 3 | Explainable self-harm risk model *(coming 24 Nov 2026)* | Which local social factors explain youth self-harm admissions, and which areas exceed expectation? |
 
 ---
 
