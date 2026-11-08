@@ -1,0 +1,277 @@
+{
+  "england": {
+    "cyp_accessed_12m": 893081.0,
+    "access_rate_per_100k": 7330.541,
+    "pct_clock_stops_within_4w": 24.438057,
+    "open_waiting_first_contact": 279604.0,
+    "median_open_wait_days": 290.0,
+    "p90_open_wait_days": 1035.7
+  },
+  "reconciliation": {
+    "sum_sub_icb_accessed": 895350.0,
+    "england_accessed": 893081.0,
+    "coverage_pct": 100.25406430099846
+  },
+  "funnel": {
+    "phi": 280.63243140597916,
+    "counts": {
+      "Within limits": 95,
+      "High (>95%)": 5,
+      "Low (<95%)": 4,
+      "High (>99.8%)": 2
+    },
+    "min_rate": 4520.817391413591,
+    "max_rate": 15820.897347818747,
+    "ratio_max_min": 3.4995656709929155
+  },
+  "sii_access_sub_icb": {
+    "sii": 484.13986385755004,
+    "rii": 0.06524564499563275,
+    "ci_low": -625.3214486773326,
+    "ci_high": 1593.6011763924325
+  },
+  "negative_binomial_irr": {
+    "idaci_score": {
+      "irr_per_sd": 1.0812,
+      "ci_low": 1.0297,
+      "ci_high": 1.1352,
+      "p_value": 0.0017
+    },
+    "pct_pop_rural": {
+      "irr_per_sd": 1.0479,
+      "ci_low": 0.9983,
+      "ci_high": 1.0999,
+      "p_value": 0.0587
+    }
+  },
+  "nb_alpha": 0.04911796474656894,
+  "spearman_idaci_vs_median_wait": {
+    "rho": -0.15784315966397316,
+    "p_value": 0.10610003697300346,
+    "ci_low": -0.3450898509337976,
+    "ci_high": 0.04078722160499798,
+    "n": 106
+  },
+  "spearman_idaci_vs_pct_4w": {
+    "rho": -0.07035236664959034,
+    "p_value": 0.48671623443312584,
+    "ci_low": -0.26469462510173924,
+    "ci_high": 0.13549297606300392,
+    "n": 100
+  },
+  "imd_rate_ratio_most_vs_least": {
+    "rate_ratio": 1.3413073213512976,
+    "ci_low": 1.3321288960848245,
+    "ci_high": 1.3505489863617772
+  },
+  "sii_access_imd_quintile": {
+    "sii": 2557.2882729046914,
+    "rii": 0.3530999369605382,
+    "ci_low": 1909.5299328889173,
+    "ci_high": 3205.0466129204656
+  },
+  "ethnicity_rate_ratios_vs_white": {
+    "Asian or Asian British": {
+      "rate_ratio": 0.43418235094586977,
+      "ci_low": 0.430008011074936,
+      "ci_high": 0.4383972135812853
+    },
+    "Black or Black British": {
+      "rate_ratio": 0.6564565867096934,
+      "ci_low": 0.6489746886972181,
+      "ci_high": 0.6640247420120817
+    },
+    "Mixed": {
+      "rate_ratio": 1.0144684897253837,
+      "ci_low": 1.0057653487115714,
+      "ci_high": 1.0232469412115675
+    },
+    "Other Ethnic Groups": {
+      "rate_ratio": 1.3159428730879772,
+      "ci_low": 1.2996396792329181,
+      "ci_high": 1.3324505806510454
+    }
+  },
+  "four_week_core20_vs_rest": {
+    "p_a": 0.23682306115064528,
+    "p_b": 0.2512328056060213,
+    "diff": -0.014409744455376017,
+    "diff_ci_low": -0.021992747244395813,
+    "diff_ci_high": -0.006826741666356222,
+    "z": -3.689127985634981,
+    "p_value": 0.00022502400459553838
+  },
+  "pathway_waits": {
+    "Other mental health": {
+      "MRS10": 68878.0,
+      "MRS10a": 131.0,
+      "MRS10b": 942.0,
+      "MRS08b": 25.0
+    },
+    "Mixed (neurodevelopmental + other)": {
+      "MRS10": 18015.0,
+      "MRS10a": 598.0,
+      "MRS10b": 1239.0,
+      "MRS08b": 3.6
+    },
+    "Gender identity": {
+      "MRS10": 2825.0,
+      "MRS10a": 1252.0,
+      "MRS10b": 2469.2,
+      "MRS08b": 17.5
+    },
+    "Neurodevelopmental (excl. autism)": {
+      "MRS10": 179529.0,
+      "MRS10a": 349.0,
+      "MRS10b": 1064.0,
+      "MRS08b": 9.8
+    },
+    "Autism (suspected/diagnosed)": {
+      "MRS10": 125740.0,
+      "MRS10a": 447.0,
+      "MRS10b": 1090.0,
+      "MRS08b": 6.2
+    }
+  },
+  "highest_access": [
+    {
+      "sub_icb_name": "NHS Lancashire and South Cumbria ICB - 00R",
+      "region_name": "North West",
+      "access_rate_per_100k": 15820.9,
+      "median_wait_still_waiting_days": 98.0,
+      "pct_clock_stops_within_4w": 25.0,
+      "idaci_score": 0.55,
+      "funnel_class": "High (>99.8%)"
+    },
+    {
+      "sub_icb_name": "NHS North East and North Cumbria ICB - 00N",
+      "region_name": "North East and Yorkshire",
+      "access_rate_per_100k": 13467.27,
+      "median_wait_still_waiting_days": 84.0,
+      "pct_clock_stops_within_4w": 7.0,
+      "idaci_score": 0.45,
+      "funnel_class": "High (>95%)"
+    },
+    {
+      "sub_icb_name": "NHS North East and North Cumbria ICB - 00P",
+      "region_name": "North East and Yorkshire",
+      "access_rate_per_100k": 12218.16,
+      "median_wait_still_waiting_days": 83.0,
+      "pct_clock_stops_within_4w": 34.0,
+      "idaci_score": 0.44,
+      "funnel_class": "High (>95%)"
+    },
+    {
+      "sub_icb_name": "NHS Greater Manchester ICB - 14L",
+      "region_name": "North West",
+      "access_rate_per_100k": 11840.04,
+      "median_wait_still_waiting_days": 452.0,
+      "pct_clock_stops_within_4w": 13.0,
+      "idaci_score": 0.57,
+      "funnel_class": "High (>99.8%)"
+    },
+    {
+      "sub_icb_name": "NHS Lancashire and South Cumbria ICB - 02G",
+      "region_name": "North West",
+      "access_rate_per_100k": 11546.31,
+      "median_wait_still_waiting_days": 319.0,
+      "pct_clock_stops_within_4w": 37.0,
+      "idaci_score": 0.32,
+      "funnel_class": "Within limits"
+    }
+  ],
+  "lowest_access": [
+    {
+      "sub_icb_name": "NHS South Yorkshire ICB - 03N",
+      "region_name": "North East and Yorkshire",
+      "access_rate_per_100k": 4520.82,
+      "median_wait_still_waiting_days": 197.0,
+      "pct_clock_stops_within_4w": 48.0,
+      "idaci_score": 0.46,
+      "funnel_class": "Low (<95%)"
+    },
+    {
+      "sub_icb_name": "NHS Essex ICB - 07H",
+      "region_name": "East of England",
+      "access_rate_per_100k": 4989.13,
+      "median_wait_still_waiting_days": 70.0,
+      "pct_clock_stops_within_4w": 17.0,
+      "idaci_score": 0.27,
+      "funnel_class": "Within limits"
+    },
+    {
+      "sub_icb_name": "NHS Cheshire and Merseyside ICB - 27D",
+      "region_name": "North West",
+      "access_rate_per_100k": 5045.85,
+      "median_wait_still_waiting_days": 313.0,
+      "pct_clock_stops_within_4w": 9.0,
+      "idaci_score": 0.26,
+      "funnel_class": "Low (<95%)"
+    },
+    {
+      "sub_icb_name": "NHS Coventry and Warwickshire ICB - B2M3M",
+      "region_name": "Midlands",
+      "access_rate_per_100k": 5206.0,
+      "median_wait_still_waiting_days": 412.0,
+      "pct_clock_stops_within_4w": 2.0,
+      "idaci_score": 0.36,
+      "funnel_class": "Low (<95%)"
+    },
+    {
+      "sub_icb_name": "NHS Surrey and Sussex ICB - 70F",
+      "region_name": "South East",
+      "access_rate_per_100k": 5358.07,
+      "median_wait_still_waiting_days": 456.0,
+      "pct_clock_stops_within_4w": 4.0,
+      "idaci_score": 0.28,
+      "funnel_class": "Within limits"
+    }
+  ],
+  "longest_waits": [
+    {
+      "sub_icb_name": "NHS Surrey and Sussex ICB - 09D",
+      "region_name": "South East",
+      "access_rate_per_100k": 7032.61,
+      "median_wait_still_waiting_days": 634.0,
+      "pct_clock_stops_within_4w": null,
+      "idaci_score": 0.32,
+      "funnel_class": "Within limits"
+    },
+    {
+      "sub_icb_name": "NHS Greater Manchester ICB - 02A",
+      "region_name": "North West",
+      "access_rate_per_100k": 8683.98,
+      "median_wait_still_waiting_days": 621.0,
+      "pct_clock_stops_within_4w": 11.0,
+      "idaci_score": 0.22,
+      "funnel_class": "Within limits"
+    },
+    {
+      "sub_icb_name": "NHS Nottingham and Nottinghamshire ICB - 52R",
+      "region_name": "Midlands",
+      "access_rate_per_100k": 9638.49,
+      "median_wait_still_waiting_days": 566.0,
+      "pct_clock_stops_within_4w": 11.0,
+      "idaci_score": 0.39,
+      "funnel_class": "High (>95%)"
+    },
+    {
+      "sub_icb_name": "NHS Thames Valley ICB - 10Q",
+      "region_name": "South East",
+      "access_rate_per_100k": 8399.17,
+      "median_wait_still_waiting_days": 531.0,
+      "pct_clock_stops_within_4w": 28.0,
+      "idaci_score": 0.22,
+      "funnel_class": "Within limits"
+    },
+    {
+      "sub_icb_name": "NHS Somerset ICB - 11X",
+      "region_name": "South West",
+      "access_rate_per_100k": 8502.0,
+      "median_wait_still_waiting_days": 523.0,
+      "pct_clock_stops_within_4w": 25.0,
+      "idaci_score": 0.3,
+      "funnel_class": "Within limits"
+    }
+  ]
+}
