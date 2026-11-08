@@ -100,11 +100,11 @@ def main() -> None:
         labels={metric: label})
     fig_map.update_layout(height=560, margin=dict(l=0, r=0, t=0, b=0))
     left.subheader(label)
-    left.plotly_chart(fig_map, use_container_width=True)
+    left.plotly_chart(fig_map, width="stretch")
 
     right.subheader("Funnel plot: which areas differ beyond expected variation?")
     right.plotly_chart(funnel_figure(view, eng["access_rate_per_100k"], results["funnel"]["phi"]),
-                       use_container_width=True)
+                       width="stretch")
     right.caption(f"Limits widened for over-dispersion (phi = {results['funnel']['phi']:.0f}); "
                   "blue = above, orange = below the 95% limits.")
 
@@ -119,14 +119,14 @@ def main() -> None:
                                 "pop_u18_est": "Under-18 population"},
                         trendline="lowess")
     fig_sc.update_layout(height=420, margin=dict(l=10, r=10, t=10, b=10))
-    st.plotly_chart(fig_sc, use_container_width=True)
+    st.plotly_chart(fig_sc, width="stretch")
 
     # ---- table view (accessibility: every chart value is also available as text)
     st.subheader("Data table")
     cols = ["sub_icb_name", "icb_name", "region_name", "pop_u18_est", "access_rate_per_100k",
             "median_wait_first_contact_days", "median_wait_still_waiting_days", "pct_clock_stops_within_4w",
             "still_waiting_count", "idaci_score", "funnel_class"]
-    st.dataframe(view[cols].sort_values("access_rate_per_100k", ascending=False), use_container_width=True,
+    st.dataframe(view[cols].sort_values("access_rate_per_100k", ascending=False), width="stretch",
                  hide_index=True)
     st.download_button("Download CSV", view[cols].to_csv(index=False), "cyp_mh_sub_icb.csv", "text/csv")
 

@@ -18,7 +18,7 @@ dependencies = [
     "statsmodels>=0.14",
     "matplotlib>=3.8",
     "plotly>=5.22",
-    "streamlit>=1.36",
+    "streamlit>=1.50",
     "pandera>=0.20",
 ]
 
