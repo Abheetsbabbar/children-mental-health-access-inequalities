@@ -11,8 +11,8 @@ personally identifiable data is used, downloaded or stored at any point.
 | 4 | [LSOA (2021) to Sub-ICB Location to ICB to NHS England Region to LAD (April 2026) lookup](https://geoportal.statistics.gov.uk/) (`LSOA21_SICBL26_ICB26_NHSER26_LAD26`) | Office for National Statistics | Allocating every LSOA to its April 2026 Sub-ICB, ICB and region | LSOA 2021 | April 2026 | OGL v3.0 |
 | 5 | [LSOA (Dec 2021) boundaries EW BSC V4 with RUC 2021](https://geoportal.statistics.gov.uk/) (`LSOA_2021_EW_BSC_V4_RUC`) | Office for National Statistics | Map polygons (dissolved to Sub-ICB); rural–urban classification | LSOA 2021 | 2021 | OGL v3.0; contains OS data |
 
-All five are downloaded by `python -m cypmh_access.download` from the URLs in
-[`src/cypmh_access/config.py`](../src/cypmh_access/config.py). Files are cached in
+All five are downloaded by `python -m access_inequalities.download` from the URLs in
+[`src/access_inequalities/config.py`](../src/access_inequalities/config.py). Files are cached in
 `data/raw/`, which git ignores.
 
 ## Required attribution

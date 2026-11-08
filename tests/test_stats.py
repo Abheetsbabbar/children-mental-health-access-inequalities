@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from cypmh_access import stats as st
+from access_inequalities import stats as st
 
 
 def test_funnel_limits_narrow_as_population_grows():

@@ -1,6 +1,6 @@
 # Children's Mental Health Services in England: Who Gets Seen, and Who Waits?
 
-[![CI](https://github.com/Abheetsbabbar/cyp-mental-health-access-inequalities/actions/workflows/ci.yml/badge.svg)](https://github.com/Abheetsbabbar/cyp-mental-health-access-inequalities/actions/workflows/ci.yml)
+[![CI](https://github.com/Abheetsbabbar/children-mental-health-access-inequalities/actions/workflows/ci.yml/badge.svg)](https://github.com/Abheetsbabbar/children-mental-health-access-inequalities/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![Data](https://img.shields.io/badge/data-NHS%20England%20open%20data-005EB8)
 ![Licence](https://img.shields.io/badge/code-MIT-green)
@@ -15,8 +15,8 @@ Part 1 of a three-project portfolio on children and young people's mental health
 | # | Project | Question |
 |---|---|---|
 | **1** | **Access & inequalities (this repo)** | Where, and for whom, is access to children's mental-health care unequal? |
-| 2 | [Demand forecasting & waiting-list simulation](https://github.com/Abheetsbabbar/cyp-mental-health-demand-forecasting) | How many referrals are coming, and what capacity would clear the waiting list? |
-| 3 | [Explainable self-harm risk model](https://github.com/Abheetsbabbar/cyp-mental-health-self-harm-risk-ml) | Which local social factors explain youth self-harm admissions, and which areas exceed expectation? |
+| 2 | [Demand forecasting & waiting-list simulation](https://github.com/Abheetsbabbar/children-mental-health-demand-forecasting) | How many referrals are coming, and what capacity would clear the waiting list? |
+| 3 | [Explainable self-harm risk model](https://github.com/Abheetsbabbar/youth-self-harm-explainable-ml) | Which local social factors explain youth self-harm admissions, and which areas exceed expectation? |
 
 ---
 
@@ -48,10 +48,10 @@ Part 1 of a three-project portfolio on children and young people's mental health
 
 | Area | What was used | Where |
 |---|---|---|
-| **Data engineering** | Automated ingestion from NHS England, gov.uk and the ONS ArcGIS REST API (paginated); **DuckDB SQL warehouse** with staging → mart layers; long → wide `PIVOT`; window functions (`QUALIFY`) for de-duplication; Parquet outputs | [`download.py`](src/cypmh_access/download.py), [`sql/`](sql/), [`build.py`](src/cypmh_access/build.py) |
-| **Geospatial** | GeoPandas/Shapely: dissolved 33,755 LSOA polygons into the **April 2026** Sub-ICB boundaries ONS hasn't yet published; geometry repair, sliver removal and simplification in British National Grid | [`build.py`](src/cypmh_access/build.py) |
-| **Statistics** | Over-dispersion-adjusted **funnel plots** (Spiegelhalter); **Slope/Relative Index of Inequality**; **negative-binomial regression** with a population offset (incidence-rate ratios); Spearman ρ with **bootstrap CIs**; two-proportion z-test; rate ratios with log-normal CIs; population-weighted indices | [`stats.py`](src/cypmh_access/stats.py) |
-| **Visualisation** | Matplotlib publication figures (one consistent palette, quantile choropleths, source lines); interactive **Plotly + Streamlit** dashboard with a region filter, choropleth map, funnel plot, LOWESS trend and data table/CSV export | [`analysis.py`](src/cypmh_access/analysis.py), [`app/`](app/streamlit_app.py) |
+| **Data engineering** | Automated ingestion from NHS England, gov.uk and the ONS ArcGIS REST API (paginated); **DuckDB SQL warehouse** with staging → mart layers; long → wide `PIVOT`; window functions (`QUALIFY`) for de-duplication; Parquet outputs | [`download.py`](src/access_inequalities/download.py), [`sql/`](sql/), [`build.py`](src/access_inequalities/build.py) |
+| **Geospatial** | GeoPandas/Shapely: dissolved 33,755 LSOA polygons into the **April 2026** Sub-ICB boundaries ONS hasn't yet published; geometry repair, sliver removal and simplification in British National Grid | [`build.py`](src/access_inequalities/build.py) |
+| **Statistics** | Over-dispersion-adjusted **funnel plots** (Spiegelhalter); **Slope/Relative Index of Inequality**; **negative-binomial regression** with a population offset (incidence-rate ratios); Spearman ρ with **bootstrap CIs**; two-proportion z-test; rate ratios with log-normal CIs; population-weighted indices | [`stats.py`](src/access_inequalities/stats.py) |
+| **Visualisation** | Matplotlib publication figures (one consistent palette, quantile choropleths, source lines); interactive **Plotly + Streamlit** dashboard with a region filter, choropleth map, funnel plot, LOWESS trend and data table/CSV export | [`analysis.py`](src/access_inequalities/analysis.py), [`app/`](app/streamlit_app.py) |
 | **Quality assurance** | **pytest** known-answer tests; **pandera data contracts** (types, ranges, grain, reconciliation to England totals); Streamlit `AppTest` smoke tests; **ruff** linting; **GitHub Actions CI** | [`tests/`](tests/), [`.github/workflows/`](.github/workflows/ci.yml) |
 | **Governance** | Open Government Licence attribution, disclosure-control handling, a limitations and ethics statement | [`docs/`](docs/) |
 
@@ -62,11 +62,11 @@ Part 1 of a three-project portfolio on children and young people's mental health
 ## Repository structure
 
 ```
-cyp-mental-health-access-inequalities/
+children-mental-health-access-inequalities/
 ├── README.md                  ← you are here
 ├── Makefile                   ← one-command pipeline: make all
 ├── pyproject.toml             ← dependencies and tool config
-├── src/cypmh_access/
+├── src/access_inequalities/
 │   ├── config.py              ← source URLs, paths, measure definitions
 │   ├── download.py            ← fetch raw open data (idempotent)
 │   ├── build.py               ← DuckDB warehouse + boundary building
@@ -94,8 +94,8 @@ cyp-mental-health-access-inequalities/
 ## How to run it
 
 ```bash
-git clone https://github.com/Abheetsbabbar/cyp-mental-health-access-inequalities.git
-cd cyp-mental-health-access-inequalities
+git clone https://github.com/Abheetsbabbar/children-mental-health-access-inequalities.git
+cd children-mental-health-access-inequalities
 python -m venv .venv && source .venv/bin/activate
 make install
 ```

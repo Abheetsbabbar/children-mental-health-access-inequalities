@@ -4,13 +4,13 @@ install:            ## install package + dev tools
 	pip install -e ".[dev]"
 
 data:               ## download raw open data (~250 MB) into data/raw
-	python -m cypmh_access.download
+	python -m access_inequalities.download
 
 build:              ## DuckDB warehouse: staging -> marts, export parquet + boundaries
-	python -m cypmh_access.build
+	python -m access_inequalities.build
 
 analysis:           ## statistics, figures and reports/results.json
-	python -m cypmh_access.analysis
+	python -m access_inequalities.analysis
 
 test:               ## unit tests, data contracts, dashboard smoke test
 	pytest -q

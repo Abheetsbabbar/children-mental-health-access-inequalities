@@ -1,6 +1,6 @@
 """Download raw open data into data/raw (idempotent: skips files that already exist).
 
-Run:  python -m cypmh_access.download
+Run:  python -m access_inequalities.download
 """
 
 from __future__ import annotations

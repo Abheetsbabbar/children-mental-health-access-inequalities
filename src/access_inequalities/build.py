@@ -1,6 +1,6 @@
 """Build the DuckDB warehouse (staging -> marts) and export analysis-ready files.
 
-Run:  python -m cypmh_access.build
+Run:  python -m access_inequalities.build
 Outputs (committed to the repo so the dashboard runs without the 200 MB raw download):
     data/processed/mart_sub_icb.parquet
     data/processed/mart_england_equity.parquet

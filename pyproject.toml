@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cypmh-access"
+name = "children-mental-health-access-inequalities"
 version = "1.0.0"
 description = "Access and waiting-time inequalities in children and young people's mental health services in England (NHS open data)"
 requires-python = ">=3.10"

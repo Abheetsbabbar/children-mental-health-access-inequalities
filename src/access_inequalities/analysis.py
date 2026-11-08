@@ -1,6 +1,6 @@
 """Inequality analysis: figures + machine-readable results.
 
-Run:  python -m cypmh_access.analysis
+Run:  python -m access_inequalities.analysis
 Writes reports/figures/*.png and reports/results.json
 """
 
