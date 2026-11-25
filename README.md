@@ -24,14 +24,14 @@ Part 1 of a three-project portfolio on children and young people's mental health
 
 | | Finding | Evidence |
 |---|---|---|
-| ⏱️ | **Only 24% of children got meaningful help within 4 weeks** (Jun–Aug 2026). **279,604** referrals were still waiting for a first contact, with a median wait so far of **290 days**. | MRS08b, MRS10, MRS10a |
-| 🧩 | **Neurodevelopmental, autism and gender-identity referrals wait longest**: medians of **349, 447 and 1,252 days** so far, against **131 days** for other mental-health referrals. | MRS10a by pathway |
-| 🌍 | **Asian children are seen at 0.43× the rate of White children**, and **Black children at 0.66×** (age-standardised; 95% CIs 0.43–0.44 and 0.65–0.66). | MHS95b, rate ratios |
+| ⏱️ | Of the referrals that received meaningful help in Jun–Aug 2026, **only 24% got it within 4 weeks**. **279,604** open referrals were still waiting for a first contact, with a median wait so far of **290 days**. These count referrals, and one child can have more than one. | MRS08b, MRS10, MRS10a |
+| 🧩 | **Gender-identity referrals have the longest median wait so far (1,252 days)**, then mixed referrals (**598**), autism (**447**) and other neurodevelopmental referrals (**349**), against **131 days** for other mental-health referrals. The groups overlap. | MRS10a by pathway |
+| 🌍 | **Recorded access for Asian children is 0.43× the rate for White children**, and **0.66× for Black children** (age-standardised; 95% CIs 0.43–0.44 and 0.65–0.66). | MHS95b, rate ratios |
 | 📉 | Access **rises with deprivation**: 8,130 vs 6,061 per 100k (most vs least deprived quintile, rate ratio **1.34**; SII **+2,557 per 100k**). Need is also higher in deprived areas, so this does not by itself show fair provision ([limitations](docs/limitations_and_ethics.md)). | MHS95b, SII |
-| 🗺️ | **Postcode variation is 3.5-fold**: from 4,521 to 15,821 children seen per 100k. Even after widening limits for over-dispersion (φ ≈ 281), **11 of 106 areas** sit outside the 95% funnel limits. | Funnel plot |
-| ⚖️ | The deprivation gap in **waits** is small: 23.7% vs 25.1% helped within 4 weeks (Core20 vs the rest, *p* < 0.001). Across areas, deprivation does **not** predict how long children wait (Spearman ρ = −0.16, 95% CI −0.35 to 0.04). Waits look driven by **local service capacity, not area need**. | z-test, bootstrap ρ |
+| 🗺️ | **Estimated access varies 3.5-fold** between areas: from 4,521 to 15,821 children seen per 100k, using estimated under-18 populations. Even after widening limits for over-dispersion (φ ≈ 281), **11 of 106 areas** sit outside the 95% funnel limits. | Funnel plot |
+| ⚖️ | The deprivation gap in **waits** is small: 23.7% vs 25.1% helped within 4 weeks (Core20 vs the rest, *p* < 0.001). Across areas there is **no clear link** between deprivation and how long referrals wait (Spearman ρ = −0.16, 95% CI −0.35 to 0.04), though a weak one can't be ruled out. The causes of the variation, including local capacity, were not tested. | z-test, bootstrap ρ |
 
-<p align="center"><img src="reports/figures/02_maps_access_and_waits.png" width="900" alt="Two maps of England: access rate per 100,000 under-18s, and median days waited by children still waiting, by Sub-ICB"></p>
+<p align="center"><img src="reports/figures/02_maps_access_and_waits.png" width="900" alt="Two maps of England: access rate per 100,000 under-18s, and median days waited by referrals still waiting, by Sub-ICB"></p>
 
 <details>
 <summary><b>More figures</b> (funnel plot, equity breakdowns, deprivation, waits by pathway)</summary>

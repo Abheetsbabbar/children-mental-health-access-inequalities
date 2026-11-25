@@ -108,7 +108,7 @@ def fig_maps(sub: pd.DataFrame, geo: gpd.GeoDataFrame) -> None:
     _choropleth(axes[0], g, "access_rate_per_100k", style.SEQUENTIAL[1:], "Access rate per 100,000 under-18s",
                 lambda v: f"{v:,.0f}")
     _choropleth(axes[1], g, "median_wait_still_waiting_days", ORANGE_RAMP,
-                "Median days waited by children still waiting", lambda v: f"{v:,.0f}")
+                "Median days waited by referrals still waiting", lambda v: f"{v:,.0f}")
     fig.suptitle("Where children get seen - and where they wait", x=0.01, ha="left", fontweight="bold")
     style.source_note(fig, SOURCE + " 2026 Sub-ICB boundaries dissolved from LSOA 2021 (ONS).")
     fig.savefig(config.FIGURES / "02_maps_access_and_waits.png")
@@ -181,7 +181,7 @@ def fig_pathway_waits(path: pd.DataFrame) -> None:
     ax.set_yticks(y, df.index)
     ax.grid(axis="y", visible=False)
     ax.set_xlabel("Median days waited so far (open referrals awaiting first contact)")
-    ax.set_title("Gender identity, autism and neurodevelopmental referrals wait longest")
+    ax.set_title("Gender identity and mixed referrals have the longest median waits")
     style.source_note(fig, SOURCE + " Four-week-wait (MRS10/MRS10a) measures, snapshot at 31 Aug 2026.")
     fig.savefig(config.FIGURES / "05_waits_by_pathway.png")
     style.close(fig)

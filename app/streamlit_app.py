@@ -23,10 +23,10 @@ SEQ_ORANGE = ["#fde0d2", "#f9b99c", "#f39268", "#eb6834", "#c4501f", "#963b14"]
 
 METRICS = {
     "access_rate_per_100k": ("Access per 100,000 under-18s (12 months)", SEQ_BLUE, ",.0f"),
-    "median_wait_still_waiting_days": ("Median days waited - children still waiting", SEQ_ORANGE, ",.0f"),
+    "median_wait_still_waiting_days": ("Median days waited - referrals still waiting", SEQ_ORANGE, ",.0f"),
     "median_wait_first_contact_days": ("Median days to first contact - children seen", SEQ_ORANGE, ",.0f"),
-    "pct_clock_stops_within_4w": ("% helped within 4 weeks (Jun-Aug 2026)", SEQ_BLUE, ".0f"),
-    "still_waiting_count": ("Children still waiting for first contact", SEQ_ORANGE, ",.0f"),
+    "pct_clock_stops_within_4w": ("% of those helped who got help within 4 weeks (Jun-Aug 2026)", SEQ_BLUE, ".0f"),
+    "still_waiting_count": ("Referrals still waiting for first contact", SEQ_ORANGE, ",.0f"),
     "idaci_score": ("Child income deprivation (IDACI)", SEQ_ORANGE, ".2f"),
 }
 
@@ -85,8 +85,8 @@ def main() -> None:
     # ---- headline tiles
     k = st.columns(4)
     k[0].metric("Children seen (12 months)", f"{eng['cyp_accessed_12m']:,.0f}")
-    k[1].metric("Helped within 4 weeks", f"{eng['pct_clock_stops_within_4w']:.0f}%")
-    k[2].metric("Waiting for first contact", f"{eng['open_waiting_first_contact']:,.0f}")
+    k[1].metric("Of those helped, within 4 weeks", f"{eng['pct_clock_stops_within_4w']:.0f}%")
+    k[2].metric("Referrals awaiting contact", f"{eng['open_waiting_first_contact']:,.0f}")
     k[3].metric("Median wait so far", f"{eng['median_open_wait_days']:,.0f} days")
 
     # ---- map + funnel
